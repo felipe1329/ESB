@@ -1,0 +1,91 @@
+{
+    "key": "group_646e64b8eeab6",
+    "title": "Blog",
+    "fields": [
+        {
+            "key": "field_646e64b9face7",
+            "label": "Feature",
+            "name": "feature",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "blog"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_646f65486c823",
+            "label": "Seminar Post",
+            "name": "seminar_post",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "seminars"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_647610c7c2570",
+            "label": "Active \/ Deactive",
+            "name": "active_deactive",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "13"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1685459168
+}

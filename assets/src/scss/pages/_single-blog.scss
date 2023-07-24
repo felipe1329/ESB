@@ -1,0 +1,95 @@
+.single-blog {
+    position: relative;
+
+    @media (max-width: 600px) {
+        overflow-x: hidden;
+    }
+
+    .texture-1 {
+        position: absolute;
+        top: -80px;
+        right: -250px;
+        z-index: -1;
+    }
+
+    .texture-2 {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        z-index: -1;
+    }
+
+    .avatar {
+        max-width: 32px;
+        min-width: 32px;
+        max-height: 32px;
+        min-height: 32px;
+        object-fit: cover;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+
+    .autor-info {
+        span {
+
+            &.name,
+            &.reading-time {
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.71;
+                letter-spacing: normal;
+                text-align: left;
+                color: #333;
+            }
+        }
+    }
+
+    .slider-articles {
+        .slick-list {
+            padding: 0 60px 0 0 !important;
+
+            @media (max-width: 600px) {
+                padding: 0 20px 0 0 !important;
+            }
+        }
+
+        .item {
+            margin-right: 60px;
+        }
+
+        article {
+            margin-bottom: 60px;
+
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #333;
+                margin-bottom: 32px;
+            }
+
+            .separator {
+                width: 99px;
+                height: 1px;
+                margin: 22px 60px 0 0;
+                background-color: #eaeaea;
+            }
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            color: #62b6d8;
+        }
+    }
+}

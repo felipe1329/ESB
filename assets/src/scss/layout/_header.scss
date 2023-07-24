@@ -1,0 +1,256 @@
+.site-header {
+    margin: 0 0 10px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    position: relative;
+    z-index: 999;
+
+    .content-item-header {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .site-logo {
+            width: 160px;
+            height: 90px;
+
+            @media (max-width: 600px) {
+                width: 130px;
+                height: 60px;
+                margin: auto;
+            }
+        }
+
+        .site-branding {
+            margin-left: 45px;
+
+            @media (max-width: 600px) {
+                margin-left: 0;
+            }
+        }
+
+        .hambuerger-menu {
+            cursor: pointer;
+        }
+
+        .content-button-header {
+            position: absolute;
+            right: 0;
+
+            a {
+                position: relative;
+                border-radius: 100px;
+                border: solid 1px #fff;
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                text-align: center;
+                color: #fff;
+                padding: 10px 24px;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+                display: block;
+                margin-left: 18px;
+                float: right;
+
+                @media (max-width: 767px) {
+                    padding: 5px 24px;
+                }
+
+                &:hover {
+                    border: solid 1px #62b6d8;
+                    color: #62b6d8;
+                }
+
+                &::before {
+                    content: "";
+                    border-radius: 100px;
+                    position: absolute;
+                    width: 100%;
+                    height: 104%;
+                    border: solid 1px #fff;
+                    top: 2px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.message-required {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    display: none;
+
+    &.active {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+.message-required {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    display: none;
+
+    &.active {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+.main-navigation {
+    animation: fadeIn 0.5s;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #62b6d8;
+    display: none;
+    opacity: 0;
+
+    &.active {
+        animation: fadeIn 0.5s;
+        opacity: 1;
+        display: block;
+    }
+
+    .close-nav {
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        animation: fadeIn 0.5s;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    ul {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        li {
+            list-style: none;
+
+            &::before {
+                width: 512px;
+                height: 512px;
+                position: absolute;
+                right: 10%;
+                top: 0;
+                content: "";
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                bottom: 0;
+                margin: auto;
+                display: none;
+
+                @media (max-width: 1200px) {
+                    width: 370px;
+                    height: 370px;
+                }
+
+                @media (max-width: 992px) {
+                    display: none !important;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    display: block;
+                }
+            }
+
+            &:nth-child(1) {
+                &::before {
+                    background-image: url(../../src/img/link.svg);
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background-image: url(../../src/img/the-product.svg);
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background-image: url(../../src/img/seminars.svg);
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    background-image: url(../../src/img/about-us.svg);
+                }
+            }
+
+            &:nth-child(5) {
+                &::before {
+                    background-image: url(../../src/img/blog.svg);
+                }
+            }
+
+            &:nth-child(6) {
+                &::before {
+                    background-image: url(../../src/img/contact-us.svg);
+                }
+            }
+
+            @media (max-width: 600px) {
+                text-align: center;
+            }
+
+            a {
+                font-size: 46px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.26;
+                letter-spacing: normal;
+                text-align: left;
+                color: #fff;
+                font-family: 'Bai Jamjuree', sans-serif;
+
+                &:hover {
+                    color: #103059;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 30px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.89;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
