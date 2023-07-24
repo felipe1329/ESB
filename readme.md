@@ -1,4 +1,4 @@
-# WordPress Gulp and Webpack starter theme
+# WordPress Gulp and Webpack Theme ESB
 
 ![](screenshot.png)
 
